@@ -1,2 +1,3 @@
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
+FROM httpd:2.4
+WORKDIR /
+COPY . .
